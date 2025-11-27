@@ -2,7 +2,7 @@
 
 Este proyecto es un servidor backend básico que implementa endpoints para manejar usuarios mediante Express y Prisma.
 
-- Prerequisitos https://github.com/Jhorman18/servidorNodejsPrismaORM
+- Prerequisitos tener un servidor nodeJs con Express, Instructivo: https://github.com/Jhorman18/servidorNodejsPrismaORM
 
 ## Tabla de Contenidos
 1. [Descripción del proyecto](#descripción-del-proyecto)
