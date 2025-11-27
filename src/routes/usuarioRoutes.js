@@ -1,6 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const usuarioController = require("../controllers/usuarioController");
+const authMiddleware = require("../middleware/authMiddleware")
 
 router.post("/", async (req, res) => {
     try {
@@ -21,7 +22,7 @@ router.post("/", async (req, res) => {
 });
 
 
-router.get("/", async (req, res) => {
+router.get("/", authMiddleware.verifyToken, async (req, res) => {
   try {
     const usuarios = await usuarioController.obtenerUsuarios();
     res.json(usuarios);
